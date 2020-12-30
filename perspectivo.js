@@ -28,8 +28,8 @@ class CubeRotate {
         this.rapidCube=5;
         this.rapidCardano=2.2;
 
-        this.proba= function() {this.allStylize(4)};
-  //      this.proba();
+        this.allStylize();
+  
 
 
         this.allDrive();
@@ -89,11 +89,9 @@ class CubeRotateWithPictures extends CubeRotate {
 this.defaultColor[4]=`black`;
 
 
-       this.proba= function() {this.allStylize(6)};
-
+ 
     }
-    allStylize(gopa) {
-alert('меня пустили'+gopa)
+    allStylize() {
 
 /*
                 this.sidePictures.forEach(function(el,ind){
