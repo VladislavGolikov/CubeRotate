@@ -28,8 +28,7 @@ h1 {
     transform-style: preserve-3d;
     /*perspective: 1000px;
     perspective-origin: 150px 150px;*/
-    /*outline: 1px black dotted;*/
-        opacity: 0.5;
+  /*  outline: 1px black dotted;*/
     }
 
 /*----------- грани ------------------------------------------------*/
@@ -39,4 +38,8 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     backface-visibility: visible;
+ /*   background-image: url('rebro.jpg');*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
