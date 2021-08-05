@@ -1,6 +1,6 @@
 const template=document.querySelector('template').innerHTML;
 /*пробуем испортить файл...*/
-/* а здесь портим для пула */
+/* а здесь портим для пула но нарываемся на кофликт! */
 class CubeRotate {
     constructor(cubeSize,vectorCube,vectorCardano,roundCube,opaqueCube,left,top) {
         this.placeForInsert=document.querySelector('.placeforcubes');
@@ -30,7 +30,7 @@ class CubeRotate {
         this.rapidCardano=2.2;
 
         this.allStylize();
-  
+
 
 
         this.allDrive();
@@ -90,7 +90,7 @@ class CubeRotateWithPictures extends CubeRotate {
 this.defaultColor[4]=`black`;
 
 
- 
+
     }
     allStylize() {
 
