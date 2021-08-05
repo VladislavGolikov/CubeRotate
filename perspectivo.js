@@ -1,6 +1,10 @@
 const template=document.querySelector('template').innerHTML;
 /*пробуем испортить файл...*/
+<<<<<<< HEAD
 /* а здесь портим для пула но нарываемся на кофликт! */
+=======
+/* а здесь портим для пула да будет конфликт!*/
+>>>>>>> 60f7aa10ef995975e2d04ccfdf365e288103fa54
 class CubeRotate {
     constructor(cubeSize,vectorCube,vectorCardano,roundCube,opaqueCube,left,top) {
         this.placeForInsert=document.querySelector('.placeforcubes');
