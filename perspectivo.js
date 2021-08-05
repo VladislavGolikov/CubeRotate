@@ -1,6 +1,6 @@
 const template=document.querySelector('template').innerHTML;
 /*пробуем испортить файл...*/
-/* а здесь портим для пула */
+/* а здесь портим для пула да будет конфликт!*/
 class CubeRotate {
     constructor(cubeSize,vectorCube,vectorCardano,roundCube,opaqueCube,left,top) {
         this.placeForInsert=document.querySelector('.placeforcubes');
