@@ -1,14 +1,14 @@
 const template=document.querySelector('template').innerHTML;
 
 class CubeRotate {
-    constructor(cubeSize,vectorCube,vectorCardano,roundCube,opaqueCube,left,top) {
-        this.placeForInsert=document.querySelector('.placeforcubes');
+    constructor(cubeSize=10,left=45,top=45,roundCube=false,opaqueCube=1,vectorCube='1,-1,1,',vectorCardano='1,1,1,') {
+        this.placeForInsert=document.querySelector('.allthereis');
         this.createCube();
         this.cubeSize=cubeSize; /* размер будет в vh */
         this.vectorCube=vectorCube;
         this.vectorCardano=vectorCardano;
-        this.counterCube=0;
-        this.counterCardano=0;
+        this.counterCube=0; /* счетчик угла вращения куба */
+        this.counterCardano=0; /* счетчик угла вращения подвеса */
         this.roundCube=roundCube/2; /* чтобы только при 1 максимально круглый куб */
         this.opaqueCube=opaqueCube;
         this.placeX=left;
@@ -17,16 +17,17 @@ class CubeRotate {
         this.sideArea=document.querySelectorAll('.area:last-child > div'); /* берем только свои грани! */
         /* значения по умолчанию: */
         this.defaultColor=[];
-        this.defaultColor[1]=`red`;
-        this.defaultColor[2]=`blue`;
+        this.defaultColor[1]=`blue`;
+        this.defaultColor[2]=`red`;
         this.defaultColor[3]=`yellow`;
         this.defaultColor[4]=`green`;
         this.defaultColor[5]=`white`;
         this.defaultColor[6]=`brown`;
         this.coefTextSize=1/5;
         this.coefCardanoSize=2; /* амплитуда колебаний куба фактически */
-        this.rapidCube=5;
-        this.rapidCardano=2.2;
+        this.rapidCube=3; /* вращение куба: градусов за кадр */
+        this.rapidCardano=1.2; /* вращение подвеса: градусов за кадр */
+
 
         this.allStylize();
 
@@ -77,11 +78,9 @@ class CubeRotate {
         window.requestAnimationFrame(()=>{this.allDrive(this)});
     }
 }
-/*
-new CubeRotate(10,'1,-1,1,','0,1,0,',0,0.9,5,5);
-new CubeRotate(30,'1,-1,1,','0,1,0,',0,0.9,55,55);
-new CubeRotate(5,'1,-1,1,','0,1,0,',0,0.9,35,35);*/
 
+//new CubeRotate(40,0,0,0,1,'1,-1,1,','0,0,0,');
+/*
 class CubeRotateWithPictures extends CubeRotate {
     constructor(cubeSize,vectorCube,vectorCardano,roundCube,opaqueCube,left,top,...sidePictures) {
         super(cubeSize,vectorCube,vectorCardano,roundCube,opaqueCube,left,top);
@@ -93,12 +92,13 @@ this.defaultColor[4]=`black`;
     }
     allStylize() {
 
-/*
+
                 this.sidePictures.forEach(function(el,ind){
-            this.sideArea[ind].style.backgroundImage=`url('rebro.jpg')`;},this)*/
+            this.sideArea[ind].style.backgroundImage=`url('rebro.jpg')`;},this)
   super.allStylize();
 
     }
 }
 const vava=['rebro.jpg','rebro.jpg','rebro.jpg','rebro.jpg','rebro.jpg','rebro.jpg'];
 new CubeRotateWithPictures(25,'1,-1,1,','0,1,0,',0,1,30,30,...vava);
+*/
