@@ -23,13 +23,13 @@ body {
     top: 0;
     right: 0;
     width: 28vw;
-    height: 35vh;
+    height: 32.5vh;
     background: linear-gradient(45deg, yellow, #83ac0b);
     border-radius: 1.5vh;
     z-index: 50;
     display: grid;
     grid-template-columns: repeat(20,1.4vw);
-    grid-template-rows: repeat(14,2.5vh);
+    grid-template-rows: repeat(13,2.5vh);
     gap: 0 0;
 }
 .formname {
@@ -46,7 +46,7 @@ body {
 }
 
 .makecubes * {
-    outline: 1px green dashed;
+ /*   outline: 1px green dashed;*/
 }
 
 
@@ -65,8 +65,17 @@ body {
     grid-row: 9 / 11;
 }
 #sizecube + label , #leftcube + label , #topcube + label , #opaquecube + label {
-    grid-column: 11 / 20;
+    grid-column: 12 / 20;
     grid-row: 3 / 5;
+    color: yellow;
+    font-family: verdana, sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+    line-height: 5vh;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0vh black;
+
 }
 #leftcube + label {
     grid-row: 5 / 7;
@@ -86,8 +95,16 @@ body {
 .createcube {
     grid-column: 13 / 20;
     grid-row: 11 / 13;
-    background-color: #43ff11;
+    background: radial-gradient(#ffff00, green );
     border-radius: 1vh;
+    color: yellow;
+    font-family: sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+    line-height: 2.5vh;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0vh black;
 
 }
 /*---------------- форма конструктора куба ------------------------------*/
