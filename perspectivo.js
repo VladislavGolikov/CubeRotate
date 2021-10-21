@@ -1,7 +1,7 @@
 const template=document.querySelector('template').innerHTML;
 
 class CubeRotate {
-    constructor(cubeSize=10,left=45,top=45,roundCube=false,opaqueCube=1,vectorCube='1,-1,1,',vectorCardano='1,1,1,') {
+    constructor(cubeSize=10,left=45,top=45,roundCube=false,opaqueCube=1,vectorCube='1,-1,1,',vectorCardano='0.5,1,0,') {
         this.placeForInsert=document.querySelector('.allthereis');
         this.createCube();
         this.cubeSize=cubeSize; /* размер будет в vh */
@@ -28,11 +28,7 @@ class CubeRotate {
         this.rapidCube=3; /* вращение куба: градусов за кадр */
         this.rapidCardano=1.2; /* вращение подвеса: градусов за кадр */
 
-
         this.allStylize();
-
-
-
         this.allDrive();
     }
 
@@ -41,7 +37,6 @@ class CubeRotate {
     }
 
     allStylize() {
-
         this.sideArea.forEach(function(el,ind){
             el.style.backgroundColor=this.defaultColor[++ind];
             if (ind<=3){el.style.color=this.defaultColor[ind+3]}else{el.style.color=this.defaultColor[ind-3]};
@@ -78,27 +73,3 @@ class CubeRotate {
         window.requestAnimationFrame(()=>{this.allDrive(this)});
     }
 }
-
-//new CubeRotate(40,0,0,0,1,'1,-1,1,','0,0,0,');
-/*
-class CubeRotateWithPictures extends CubeRotate {
-    constructor(cubeSize,vectorCube,vectorCardano,roundCube,opaqueCube,left,top,...sidePictures) {
-        super(cubeSize,vectorCube,vectorCardano,roundCube,opaqueCube,left,top);
-        this.sidePictures=sidePictures;
-this.defaultColor[4]=`black`;
-
-
-
-    }
-    allStylize() {
-
-
-                this.sidePictures.forEach(function(el,ind){
-            this.sideArea[ind].style.backgroundImage=`url('rebro.jpg')`;},this)
-  super.allStylize();
-
-    }
-}
-const vava=['rebro.jpg','rebro.jpg','rebro.jpg','rebro.jpg','rebro.jpg','rebro.jpg'];
-new CubeRotateWithPictures(25,'1,-1,1,','0,1,0,',0,1,30,30,...vava);
-*/

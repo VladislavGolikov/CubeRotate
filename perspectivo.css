@@ -45,12 +45,6 @@ body {
     text-shadow: 2px -2px 0.5vh #14c2c2;
 }
 
-.makecubes * {
- /*   outline: 1px green dashed;*/
-}
-
-
-
 #sizecube , #leftcube , #topcube , #opaquecube {
     grid-column: 2 / 11;
     grid-row: 3 / 5;
@@ -105,7 +99,6 @@ body {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 1px 0vh black;
-
 }
 /*---------------- форма конструктора куба ------------------------------*/
 
@@ -115,7 +108,6 @@ body {
     transform-style: preserve-3d;
     /*perspective: 1000px;
     perspective-origin: 150px 150px;*/
-    outline: 1px white dotted;
     }
 
 /*----------- грани кубов ------------------------------------------------*/
@@ -125,7 +117,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     backface-visibility: visible;
-    background-image: url('rebro.jpg');
+  /*  background-image: url('rebro.jpg');*/
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,11 +1,20 @@
-const allCubes=[];
+class Interface {
+    static allCubes=[];
 
-document.querySelector('.createcube').addEventListener('click',addCube)
+    constructor() {
+        document.querySelector('.createcube').addEventListener('click',Interface.addCube)
+    }
 
-function addCube() {
-    event.preventDefault();
-    const arrIntermediate=Array.from(document.forms[0]);
-    const parameters=arrIntermediate.map(function(el){if (el.value==='checkbox') {return el.checked} else {return el.value}}).slice(0,arrIntermediate.length-1)
+    static addCube() {
+        event.preventDefault();
+        const arrIntermediate=Array.from(document.forms[0]);
+        const parameters=arrIntermediate.map(function(el){if (el.value==='checkbox') {return el.checked} else {return el.value}}).slice(0,arrIntermediate.length-1)
 
-    allCubes.push(new CubeRotate(...parameters))
+        Interface.allCubes.push(new CubeRotate(...parameters))
+    }
 }
+
+new Interface;
+
+
+
