@@ -4,8 +4,7 @@
   "description": "rotating cubes constructor is a workout",
   "main": "perspectivo-interface.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack":"webpack"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
