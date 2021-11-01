@@ -1,0 +1,23 @@
+{
+  "name": "rotatecube",
+  "version": "1.0.0",
+  "description": "rotating cubes constructor is a workout",
+  "main": "perspectivo-interface.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladislavGolikov/CubeRotate.git"
+  },
+  "keywords": [
+    "cube",
+    "constructor"
+  ],
+  "author": "Vladislav Golikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladislavGolikov/CubeRotate/issues"
+  },
+  "homepage": "https://github.com/VladislavGolikov/CubeRotate#readme"
+}
