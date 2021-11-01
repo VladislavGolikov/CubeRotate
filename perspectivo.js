@@ -1,6 +1,9 @@
+
+
+
 const template=document.querySelector('template').innerHTML;
 
-class CubeRotate {
+module.exports.CubeRotate=class CubeRotate {
     constructor(cubeSize=10,left=45,top=45,roundCube=false,opaqueCube=1,vectorCube='1,-1,1,',vectorCardano='0.5,1,0,') {
         this.placeForInsert=document.querySelector('.allthereis');
         this.createCube();
@@ -73,3 +76,4 @@ class CubeRotate {
         window.requestAnimationFrame(()=>{this.allDrive(this)});
     }
 }
+//module.exports.CubeRotate=CubeRotate;

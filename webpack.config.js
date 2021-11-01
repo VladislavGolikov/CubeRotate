@@ -2,7 +2,7 @@
 
 module.exports={
   mode: 'development',
-  entry: './index.html',
+  entry: './perspectivo-interface.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
