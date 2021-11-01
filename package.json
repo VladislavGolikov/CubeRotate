@@ -4,7 +4,8 @@
   "description": "rotating cubes constructor is a workout",
   "main": "perspectivo-interface.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack":"webpack"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/VladislavGolikov/CubeRotate/issues"
   },
-  "homepage": "https://github.com/VladislavGolikov/CubeRotate#readme"
+  "homepage": "https://github.com/VladislavGolikov/CubeRotate#readme",
+  "devDependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  }
 }
