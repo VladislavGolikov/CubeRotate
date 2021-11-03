@@ -1,9 +1,9 @@
-
-const template=document.querySelector('template').innerHTML;
+const template=require('./template-cube').templateCube;
 
 module.exports.CubeRotate=class CubeRotate {
     constructor(cubeSize=10,left=45,top=45,roundCube=false,opaqueCube=1,vectorCube='1,-1,1,',vectorCardano='0.5,1,0,') {
         this.placeForInsert=document.querySelector('.allthereis');
+
         this.createCube();
         this.cubeSize=cubeSize; /* размер будет в vh */
         this.vectorCube=vectorCube;
@@ -15,6 +15,7 @@ module.exports.CubeRotate=class CubeRotate {
         this.placeX=left;
         this.placeY=top;
         this.cardanoArea=document.querySelector('.area:last-child');
+
         this.sideArea=document.querySelectorAll('.area:last-child > div'); /* берем только свои грани! */
         /* значения по умолчанию: */
         this.defaultColor=[];
