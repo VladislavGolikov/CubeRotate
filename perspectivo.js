@@ -1,6 +1,4 @@
 
-
-
 const template=document.querySelector('template').innerHTML;
 
 module.exports.CubeRotate=class CubeRotate {
@@ -76,4 +74,3 @@ module.exports.CubeRotate=class CubeRotate {
         window.requestAnimationFrame(()=>{this.allDrive(this)});
     }
 }
-//module.exports.CubeRotate=CubeRotate;
