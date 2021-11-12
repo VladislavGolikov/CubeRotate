@@ -1,7 +1,10 @@
 const path=require('path');
 
-//const NODE_ENV=process.env;
-//console.log(NODE_ENV)
+require('dotenv').config({path: __dirname + '/project.env'}); /* для использования переменных окружения с указанием файла */
+
+const {assembly}=process.env; /* определение переменных окружения */
+console.log(assembly)
+
 module.exports={
     mode: 'development',
 
