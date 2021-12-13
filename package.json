@@ -4,8 +4,8 @@
   "description": "rotating cubes constructor is a workout",
   "main": "perspectivo-interface.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "change": "/change_mode.js"
+    "webpack": "webpack",
+    "sw": "start node ./node_modules/switching-environment-files/switching-environment-files.js"
   },
   "repository": {
     "type": "git",
@@ -16,13 +16,14 @@
     "constructor"
   ],
   "author": "Vladislav Golikov",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/VladislavGolikov/CubeRotate/issues"
   },
   "homepage": "https://github.com/VladislavGolikov/CubeRotate#readme",
   "devDependencies": {
     "dotenv": "^10.0.0",
+    "switching-environment-files": "^1.0.11",
     "webpack": "^5.61.0",
     "webpack-cli": "^4.9.1"
   },
