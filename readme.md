@@ -1,6 +1,6 @@
 # Конструктор вращающихся кубов
 
-One Paragraph of project description goes here
+На основе этого проекта изучаем сборщик [webpack](https://webpack.js.org/)
 
 ## Getting Started
 
