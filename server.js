@@ -11,7 +11,7 @@ const express=require(execSync(`npm root -g`, {encoding: 'utf8'}).trim()+'\\expr
 
 
 
-//const colors=require('colors');
+const colors=require('colors');
 
 const app=express();
 
@@ -37,5 +37,5 @@ app.get('/', function (req, res) {
 //app.use(express.json());
 //app.use(express.static(`${__dirname}${pathToStaticFiles}`));
 
-app.listen(port,()=>{console.log(`Это экспресс запущен в работу... Текущий порт ${port}`)});
+app.listen(port,()=>{console.log(`Это экспресс запущен в работу...`.brightGreen+`Текущий порт ${port}`.bgYellow.black)});
 
