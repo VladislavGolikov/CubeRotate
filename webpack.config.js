@@ -4,6 +4,9 @@ require('dotenv').config({path: __dirname + '/project.env'}); /* для испо
 
 const {assembly}=process.env; /* определение переменных окружения */
 
+/**************************************************************************************************/
+/**************************************************************************************************/
+
 module.exports={
     mode: assembly,
 
@@ -11,7 +14,7 @@ module.exports={
     context: path.resolve(__dirname, 'source-files'),
     entry: './perspectivo-interface.js',
     output: {
-        path: assembly==`development` ? path.resolve(__dirname, `destination/for-development`) : path.resolve(__dirname, 'destination/for-production'),
+        path: path.resolve(__dirname, `destination/for-${assembly}`),
         filename: 'bundle.js',
         library: 'CubeRotate',
     },
