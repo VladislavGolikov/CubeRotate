@@ -5,7 +5,8 @@
   "main": "perspectivo-interface.js",
   "scripts": {
     "webpack": "webpack",
-    "sw": "start node ./node_modules/switching-environment-files/switching-environment-files.js"
+    "sw": "start node ./node_modules/switching-environment-files/switching-environment-files.js",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -23,12 +24,14 @@
   "homepage": "https://github.com/VladislavGolikov/CubeRotate#readme",
   "devDependencies": {
     "dotenv": "^10.0.0",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
     "switching-environment-files": "^1.0.11",
     "webpack": "^5.61.0",
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "colors": "^1.4.0",
-    "eslint": "^8.5.0"
+    "colors": "^1.4.0"
   }
 }
