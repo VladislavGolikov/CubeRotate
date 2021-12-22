@@ -18,7 +18,7 @@ module.exports={
         filename: 'bundle.js',
         library: 'CubeRotate',
     },
-    watch: false,
+    watch: true,
 
     watchOptions: {
         aggregateTimeout: 100
