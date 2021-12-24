@@ -1,4 +1,5 @@
 const path=require('path');
+const HTMLWebpackPlugin=require('html-webpack-plugin');
 
 require('dotenv').config({path: __dirname + '/project.env'}); /* для использования переменных окружения с указанием файла */
 
@@ -24,5 +25,10 @@ module.exports={
         aggregateTimeout: 100
     },
     devtool: 'source-map',
+    plugins: [
+            new HTMLWebpackPlugin({
+                template: path.resolve(__dirname, "source-files", "index.html")
+            })
+        ]
 
 };

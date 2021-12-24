@@ -10,7 +10,7 @@ const express=require(execSync(`npm root -g`, {encoding: 'utf8'}).trim()+'\\expr
  (там на конце перевод строки cmd возвращает) и еще экраноировать обратный слеш */
 
 const port=4000;
-const pathToIndex=`${__dirname}/source-files/index.html`;
+const pathToIndex=`${__dirname}/destination/for-development/index.html`;
 const app=express();
 
 
