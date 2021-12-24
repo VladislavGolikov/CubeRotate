@@ -5,14 +5,18 @@
         "es2021": true,
         "node": true
     },
-    "extends": [
-        "airbnb-base"
-    ],
     "parserOptions": {
         "ecmaVersion": 13
     },
     "rules": {
         "no-multiple-empty-lines": 0,
         "linebreak-style": 0
-    }
+    },
+    "plugins": [
+        "security"
+    ],
+    "extends": [
+        "plugin:security/recommended",
+        "airbnb-base"
+    ]
 }
