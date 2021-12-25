@@ -32,7 +32,8 @@ module.exports={
         ],
     devServer: {
         host: 'localhost',
-        port: 5000
+        port: 5000,
+        static: __dirname+'/source-files'
     }
 
 };
