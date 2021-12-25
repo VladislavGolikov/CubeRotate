@@ -19,7 +19,7 @@ module.exports={
         filename: 'bundle.js',
         library: 'CubeRotate',
     },
-    watch: true,
+    watch: false,
 
     watchOptions: {
         aggregateTimeout: 100
@@ -29,6 +29,10 @@ module.exports={
             new HTMLWebpackPlugin({
                 template: path.resolve(__dirname, "source-files", "index.html")
             })
-        ]
+        ],
+    devServer: {
+        host: 'localhost',
+        port: 5000
+    }
 
 };
