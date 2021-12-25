@@ -1,5 +1,6 @@
 const path=require('path');
 const HTMLWebpackPlugin=require('html-webpack-plugin');
+const TerserPlugin=require('terser-webpack-plugin');
 
 require('dotenv').config({path: __dirname + '/project.env'}); /* для использования переменных окружения с указанием файла */
 
@@ -34,6 +35,10 @@ module.exports={
         host: 'localhost',
         port: 5000,
         static: __dirname+'/source-files'
-    }
+    },
+    optimization: {
+    minimize: assembly=='production',
+    minimizer: [new TerserPlugin()]
+  }
 
 };
