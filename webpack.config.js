@@ -37,8 +37,7 @@ module.exports={
         static: __dirname+'/source-files'
     },
     optimization: {
-    minimize: assembly=='production',
-    minimizer: [new TerserPlugin()]
-  }
-
+        minimize: assembly=='production',
+        minimizer: [new TerserPlugin()]
+    }
 };
