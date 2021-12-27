@@ -14,11 +14,14 @@ module.exports={
 
 
     context: path.resolve(__dirname, 'source-files'),
-    entry: './perspectivo-interface.js',
+    entry: {
+        mainscript:'./perspectivo-interface.js',
+        secondscript:'./perspectivo-interface2.js'
+    },
     output: {
         path: path.resolve(__dirname, `destination/for-${assembly}`),
-        filename: 'bundle.js',
-        library: 'CubeRotate',
+        filename: '[name].js',
+        library: '[name]',
     },
     watch: false,
 
