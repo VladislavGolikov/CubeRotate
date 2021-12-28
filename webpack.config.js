@@ -17,7 +17,7 @@ module.exports={
     entry: {
         mainscript:'./perspectivo-interface.js',
         secondscript:'./perspectivo-interface2.js',
-        scriptforerror:'./perspectivo.js'
+        scriptforerror:'./template-cube2.js'
     },
     output: {
         path: path.resolve(__dirname, `destination/for-${assembly}`),
