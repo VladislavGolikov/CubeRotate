@@ -1,6 +1,6 @@
 const path=require('path');
-const HTMLWebpackPlugin=require('html-webpack-plugin');
-const TerserPlugin=require('terser-webpack-plugin');
+const HTMLWebpackPlugin=require('html-webpack-plugin');/* присоединение скриптов в штмл  файл */
+const TerserPlugin=require('terser-webpack-plugin'); /* минимификатор */
 
 require('dotenv').config({path: __dirname + '/project.env'}); /* для использования переменных окружения с указанием файла */
 
@@ -17,7 +17,7 @@ module.exports={
     entry: {
         mainscript:'./perspectivo-interface.js',
         secondscript:'./perspectivo-interface2.js',
-        scriptforerror:'./template-cube2.js'
+        scriptforerror:'./ левый путь для генерации ошибки... .js'
     },
     output: {
         path: path.resolve(__dirname, `destination/for-${assembly}`),
@@ -41,6 +41,7 @@ module.exports={
         static: __dirname+'/source-files'
     },
     optimization: {
+        emitOnErrors: false,
         minimize: assembly=='production',
         minimizer: [new TerserPlugin()]
     }
