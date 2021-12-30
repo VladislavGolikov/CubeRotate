@@ -7,7 +7,9 @@
     "webpack": "webpack",
     "sw": "start node ./node_modules/switching-environment-files/switching-environment-files.js",
     "lint": "eslint",
-    "serv": "webpack serve"
+    "serv": "webpack serve",
+    "sassmin": "sass --watch ./source-files/perspectivo.scss:./source-files/perspectivo.css --no-source-map --style=compressed",
+    "sass": "sass --watch ./source-files/perspectivo.scss:./source-files/perspectivo.css --no-source-map --style=compressed"
   },
   "repository": {
     "type": "git",
