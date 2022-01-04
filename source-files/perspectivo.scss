@@ -8,58 +8,37 @@ body {
     background: linear-gradient(90deg, #652b97, #430b73);
 
     .allthereis {
+        $indent-X: 1vw;
+        $indent-Y: 2vh;
+
         position: relative;
-        top: 2vh;
-        left: 1vw;
-        width: 98vw;
-        height: 96vh;
+        top: $indent-Y;
+        left: $indent-X;
+        width: 100vw -$indent-X*2;
+        height: 100vh -$indent-Y*2;
         box-sizing: border-box;
         overflow: hidden;
 
         /*---------------- форма конструктора куба ------------------------------*/
         .makecubes {
+            $num-of-columns: 20;
+            $num-of-rows: 13;
+            $size-of-columns: 1.4vw;
+            $size-of-rows: 2.5vh;
             position: absolute;
             top: 0;
             right: 0;
-            width: 28vw;
-            height: 32.5vh;
+            width: $num-of-columns*$size-of-columns;
+            height: $num-of-rows*$size-of-rows;
             background: linear-gradient(45deg, yellow, #83ac0b);
             border-radius: 1.5vh;
             z-index: 50;
             display: grid;
-            grid-template-columns: repeat(20,1.4vw);
-            grid-template-rows: repeat(13,2.5vh);
+            grid-template-columns: repeat($num-of-columns,$size-of-columns);
+            grid-template-rows: repeat($num-of-rows,$size-of-rows);
             gap: 0 0;
 
-            .formname {
-                grid-column: 2 / 20;
-                grid-row: 1 / 3;
-                font-family: sans-serif;
-                font-size: 2.5vh;
-                font-weight: bold;
-                line-height: 5vh;
-                text-align: center;
-                text-transform: uppercase;
-                color: #652b97;
-                text-shadow: 2px -2px 0.5vh #14c2c2;
-            }
-
-            #sizecube , #leftcube , #topcube , #opaquecube {
-                grid-column: 2 / 11;
-                grid-row: 3 / 5;
-            }
-            #leftcube {
-                grid-row: 5 / 7;
-            }
-            #topcube {
-                grid-row: 7 / 9;
-            }
-            #opaquecube {
-                grid-row: 9 / 11;
-            }
-            #sizecube + label , #leftcube + label , #topcube + label , #opaquecube + label {
-                grid-column: 12 / 20;
-                grid-row: 3 / 5;
+            %typical-text {
                 color: yellow;
                 font-family: verdana, sans-serif;
                 font-size: 2vh;
@@ -68,36 +47,75 @@ body {
                 text-align: left;
                 text-transform: uppercase;
                 text-shadow: 1px 1px 0vh black;
+            }
 
+            %typical-grid {
+                grid-column: 2 / 11;
+                grid-row: 3 / 5;
+            }
+            %typical-grid-label {
+                grid-column: 12 / 20;
+                grid-row: 3 / 5;
+            }
+
+            .formname {
+                @extend %typical-text;
+                grid-column: 2 / 20;
+                grid-row: 1 / 3;
+                font-size: 2.5vh;
+                text-align: center;
+                color: #652b97;
+                text-shadow: 2px -2px 0.5vh #14c2c2;
+            }
+
+            #sizecube {
+                @extend %typical-grid;
+            }
+            #leftcube {
+                @extend %typical-grid;
+                grid-row: 5 / 7;
+            }
+            #topcube {
+                @extend %typical-grid;
+                grid-row: 7 / 9;
+            }
+            #opaquecube {
+                @extend %typical-grid;
+                grid-row: 9 / 11;
+            }
+            #sizecube + label {
+                @extend %typical-text;
+                @extend %typical-grid-label;
             }
             #leftcube + label {
+                @extend %typical-text;
+                @extend %typical-grid-label;
                 grid-row: 5 / 7;
             }
             #topcube + label {
+                @extend %typical-text;
+                @extend %typical-grid-label;
                 grid-row: 7 / 9;
             }
             #opaquecube + label {
+                @extend %typical-text;
+                @extend %typical-grid-label;
                 grid-row: 9 / 11;
             }
 
-            #roundcube , #roundcube + label {
+            #roundcube , #roundcube + label {// здесь еще поправить бы...
                 grid-column: 2 / 11;
                 grid-row: 12 / 13;
             }
 
             .createcube {
+                @extend %typical-text;
                 grid-column: 13 / 20;
                 grid-row: 11 / 13;
                 background: radial-gradient(#ffff00, green );
                 border-radius: 1vh;
-                color: yellow;
-                font-family: sans-serif;
-                font-size: 2vh;
-                font-weight: bold;
                 line-height: 2.5vh;
                 text-align: center;
-                text-transform: uppercase;
-                text-shadow: 1px 1px 0vh black;
             }
         }
     }
