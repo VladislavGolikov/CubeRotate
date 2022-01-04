@@ -16,8 +16,7 @@ module.exports={
     context: path.resolve(__dirname, 'source-files'),
     entry: {
         mainscript:'./perspectivo-interface.js',
-        secondscript:'./perspectivo-interface2.js',
-        scriptforerror:'./ левый путь для генерации ошибки... .js'
+        secondscript:'./perspectivo-interface2.js'
     },
     output: {
         path: path.resolve(__dirname, `destination/for-${assembly}`),
