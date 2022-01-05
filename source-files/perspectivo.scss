@@ -1,8 +1,4 @@
-
-* {
-    padding: 0;
-    margin: 0;
-}
+@import "reset.scss"; /* сброс стилей по умолчанию */
 
 body {
     background: linear-gradient(90deg, #652b97, #430b73);
