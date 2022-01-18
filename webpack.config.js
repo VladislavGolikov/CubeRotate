@@ -28,9 +28,16 @@ module.exports={
         aggregateTimeout: 100
     },
     devtool: 'source-map',
+
+    module: {
+        rules: [
+            {test: /\.(pug)$/, loader: 'pug-loader'}
+        ]
+    },
+
     plugins: [
             new HTMLWebpackPlugin({
-                template: path.resolve(__dirname, "source-files", "index.html")
+                template: path.resolve(__dirname, "source-files", "index.pug")
             })
         ],
     devServer: {

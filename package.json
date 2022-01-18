@@ -39,6 +39,7 @@
     "webpack-dev-server": "^4.7.1"
   },
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "pug-loader": "^2.4.0"
   }
 }
