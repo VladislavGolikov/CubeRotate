@@ -1,4 +1,6 @@
 import png from "./favicon.png";
+import myStyle from "./perspectivo.css";
+
 
 const cube=require('./perspectivo');
 
