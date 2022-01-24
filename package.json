@@ -4,10 +4,8 @@
   "description": "rotating cubes constructor is a workout",
   "main": "perspectivo-interface.js",
   "scripts": {
-    "webpack": "webpack",
     "sw": "start node ./node_modules/switching-environment-files/switching-environment-files.js",
     "lint": "eslint",
-    "serv": "webpack serve",
     "sassmin": "sass --watch ./source-files/perspectivo.scss:./source-files/perspectivo.css --no-source-map --style=compressed",
     "sass": "sass --watch ./source-files/perspectivo.scss:./source-files/perspectivo.css --no-source-map --update"
   },
@@ -26,20 +24,12 @@
   },
   "homepage": "https://github.com/VladislavGolikov/CubeRotate#readme",
   "devDependencies": {
-    "css-loader": "^6.5.1",
     "dotenv": "^10.0.0",
     "eslint": "^8.5.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-security": "^1.4.0",
-    "html-webpack-plugin": "^5.5.0",
-    "pug-loader": "^2.4.0",
-    "style-loader": "^3.3.1",
-    "switching-environment-files": "^1.0.11",
-    "terser-webpack-plugin": "^5.3.0",
-    "webpack": "^5.61.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.7.1"
+    "switching-environment-files": "^1.0.11"
   },
   "dependencies": {
     "colors": "^1.4.0"
