@@ -21,6 +21,7 @@ module.exports={
         path: path.resolve(__dirname, `destination/for-${assembly}`),
         filename: '[name].js',
         library: '[name]',
+        /*assetModuleFilename: 'images/[hash][ext][query]' для настройки имен файлов ресурсов на выходе */
     },
     watch: false,
 
