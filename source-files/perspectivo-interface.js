@@ -1,5 +1,6 @@
 import png from "./favicon.png";
-import myStyle from "./perspectivo.css";
+import css from "./perspectivo.css";
+import rebroscript from "../content/rebroscript.jpg";
 
 
 const cube=require('./perspectivo');
@@ -21,6 +22,4 @@ class Interface {
 }
 
 new Interface;
-
-
 

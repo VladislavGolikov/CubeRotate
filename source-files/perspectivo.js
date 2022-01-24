@@ -1,5 +1,6 @@
 const template=require('./template-cube').templateCube;
 
+
 module.exports.CubeRotate=class CubeRotate {
     constructor(cubeSize=10,left=45,top=45,roundCube=false,opaqueCube=1,vectorCube='1,-1,1,',vectorCardano='0.5,1,0,') {
         this.placeForInsert=document.querySelector('.allthereis');
@@ -49,7 +50,9 @@ module.exports.CubeRotate=class CubeRotate {
             el.style.borderRadius=`${this.cubeSize*this.roundCube}vh`;
             el.style.lineHeight=`${this.cubeSize}vh`;
             el.style.fontSize=`${this.cubeSize*this.coefTextSize}vh`;
+
         },this);
+
 
         this.cardanoArea.style.width=`${this.cubeSize*this.coefCardanoSize}vh`;
         this.cardanoArea.style.height=`${this.cubeSize*this.coefCardanoSize}vh`;
