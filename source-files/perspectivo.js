@@ -1,7 +1,7 @@
-const template=require('./template-cube').templateCube;
+//const template=require('./template-cube').templateCube;
 
 
-module.exports.CubeRotate=class CubeRotate {
+class CubeRotate {
     constructor(cubeSize=10,left=45,top=45,roundCube=false,opaqueCube=1,vectorCube='1,-1,1,',vectorCardano='0.5,1,0,') {
         this.placeForInsert=document.querySelector('.allthereis');
 
@@ -36,7 +36,7 @@ module.exports.CubeRotate=class CubeRotate {
     }
 
     createCube() {
-        this.placeForInsert.insertAdjacentHTML('beforeEnd',template);
+        this.placeForInsert.insertAdjacentHTML('beforeEnd',templateCube);
     }
 
     allStylize() {
