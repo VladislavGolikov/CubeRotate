@@ -8,3 +8,4 @@ export const templateCube=`
     <div class="side6">проба</div>
   </div>
 `;
+
