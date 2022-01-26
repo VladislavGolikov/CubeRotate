@@ -1,5 +1,7 @@
+import './perspectivo.scss';
+
 import {CubeRotate} from './perspectivo.js';
-import css from './perspectivo.scss';
+
 
 class Interface {
     static allCubes=[];
