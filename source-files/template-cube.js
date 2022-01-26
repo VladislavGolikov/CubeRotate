@@ -1,5 +1,4 @@
-
-const templateCube=`
+export const templateCube=`
   <div class="area">
     <div class="side1">проба</div>
     <div class="side2">проба</div>
