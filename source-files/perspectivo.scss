@@ -1,4 +1,6 @@
 @import "reset.scss"; /* сброс стилей по умолчанию */
+@import "fonts.scss"; /* собственные шрифты */
+
 
 body {
     background: linear-gradient(90deg, #652b97, #430b73);
@@ -36,12 +38,12 @@ body {
 
             %typical-text {
                 color: yellow;
-                font-family: verdana, sans-serif;
+                font-family: minecraft, sans-serif;
                 font-size: 2vh;
                 font-weight: bold;
                 line-height: 5vh;
                 text-align: left;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 text-shadow: 1px 1px 0vh black;
             }
 
@@ -56,6 +58,7 @@ body {
 
             .formname {
                 @extend %typical-text;
+                font-family: verdana;
                 grid-column: 1 / 21;
                 grid-row: 1 / 3;
                 font-size: 2.5vh;
