@@ -1,7 +1,7 @@
 import {templateCube} from './template-cube.js';
 
 /* для пробы вставки картинки в скрипте: */
-import probePicture from '../content/gold.png';
+import probePicture from '../content/pictures/rebroscript.jpg';
 
 export class CubeRotate {
     constructor(cubeSize=10,left=45,top=45,roundCube=false,opaqueCube=1,vectorCube='1,-1,1,',vectorCardano='0.5,1,0,') {
@@ -81,3 +81,4 @@ export class CubeRotate {
         window.requestAnimationFrame(()=>{this.allDrive(this)});
     }
 }
+

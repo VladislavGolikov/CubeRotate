@@ -21,3 +21,4 @@ class Interface {
 
 new Interface;
 
+alert(window.getComputedStyle(document.querySelector('.createcube')).fontFamily);

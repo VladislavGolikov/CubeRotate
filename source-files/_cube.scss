@@ -8,11 +8,12 @@
 //----------- грани кубов ------------------------------------------------
     > div {
         position: absolute;
+        font-family: verdana, sans-serif;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
         backface-visibility: visible;
-        background-image: url('../content/rebro.jpg');
+        background-image: url('../content/pictures/rebro.jpg');
         background-position: center top;
         background-repeat: no-repeat;
         background-size: cover;
