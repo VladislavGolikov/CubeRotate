@@ -1,5 +1,7 @@
 import {templateCube} from './template-cube.js';
 
+alert(templateCube)
+
 /* для пробы вставки картинки в скрипте: */
 import probePicture from '../content/pictures/rebroscript.jpg';
 

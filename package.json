@@ -2,9 +2,11 @@
   "name": "rotatecube",
   "version": "1.0.0",
   "description": "rotating cubes constructor is a workout",
-  "targets": { "main": false },
+  "targets": {
+    "main": false
+  },
   "main": "dist/main.js",
-  "source": "source-files/index.html",
+  "source": "source-files/index.pug",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "sw": "start node ./node_modules/switching-environment-files/switching-environment-files.js",
@@ -29,6 +31,8 @@
   },
   "homepage": "https://github.com/VladislavGolikov/CubeRotate#readme",
   "devDependencies": {
+    "@parcel/transformer-inline-string": "^2.2.1",
+    "@parcel/transformer-pug": "^2.2.1",
     "@parcel/transformer-sass": "^2.2.1",
     "dotenv": "^10.0.0",
     "eslint": "^8.5.0",
