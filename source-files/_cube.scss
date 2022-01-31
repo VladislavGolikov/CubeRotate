@@ -13,10 +13,10 @@
         text-align: center;
         text-transform: uppercase;
         backface-visibility: visible;
-        background-image: url('../content/pictures/rebro.jpg');
+        background-image: url('../content/pictures/rebro.jpg?as=webp&width=250');
         background-position: center top;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         //- переопределяем фон последней грани, для пробы использования свг
         &:last-child {
             background-image: url('../content/vector/instagram.svg');

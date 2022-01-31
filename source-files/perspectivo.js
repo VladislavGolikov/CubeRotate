@@ -1,8 +1,7 @@
 import {templateCube} from './template-cube.js';
 
-
 /* для пробы вставки картинки в скрипте: */
-import probePicture from '../content/pictures/rebroscript.jpg';
+import probePicture from '../content/pictures/rebroscript.jpg?as=webp&width=250';
 
 /* для пробы вставки свг картинки в скрипте: */
 import probePictureSVG from '../content/vector/instagram.svg';
