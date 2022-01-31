@@ -17,5 +17,10 @@
         background-position: center top;
         background-repeat: no-repeat;
         background-size: cover;
+        //- переопределяем фон последней грани, для пробы использования свг
+        &:last-child {
+            background-image: url('../content/vector/instagram.svg');
+        }
+
     }
 }

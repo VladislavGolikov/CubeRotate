@@ -1,9 +1,11 @@
 import {templateCube} from './template-cube.js';
 
-alert(templateCube)
 
 /* для пробы вставки картинки в скрипте: */
 import probePicture from '../content/pictures/rebroscript.jpg';
+
+/* для пробы вставки свг картинки в скрипте: */
+import probePictureSVG from '../content/vector/instagram.svg';
 
 export class CubeRotate {
     constructor(cubeSize=10,left=45,top=45,roundCube=false,opaqueCube=1,vectorCube='1,-1,1,',vectorCardano='0.5,1,0,') {
