@@ -7,6 +7,10 @@ import probePicture from '../content/pictures/rebroscript.jpg';
 /* для пробы вставки свг картинки в скрипте: */
 import probePictureSVG from '../content/vector/instagram.svg';
 
+/* для пробы вставки свг инлайн в скрипте плюс экспорт импорта: */
+import probePictureInlineSVG from 'bundle-text:../content/vector/instagram.svg';
+export const probePictureInlineSVG=probePictureInlineSVG;
+
 export class CubeRotate {
     constructor(cubeSize=10,left=45,top=45,roundCube=false,opaqueCube=1,vectorCube='1,-1,1,',vectorCardano='0.5,1,0,') {
         this.placeForInsert=document.querySelector('.allthereis');

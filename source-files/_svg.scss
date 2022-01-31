@@ -1,0 +1,18 @@
+.forSVGInline {
+    position: absolute;
+    $spacing: 5vw;
+    width: $spacing;
+    height: $spacing;
+    right: $spacing/4;
+    bottom: $spacing/4;
+    background-color: red;
+}
+
+.insideSVG {
+    fill: green;
+    fill-opacity: 0.8;
+    stroke: yellow;
+    stroke-width: 4;
+    stroke-dasharray: 4 5;
+}
+

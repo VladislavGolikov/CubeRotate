@@ -1,13 +1,14 @@
 import './perspectivo.scss';
 
-import {CubeRotate} from './perspectivo.js';
+import {CubeRotate, probePictureInlineSVG} from './perspectivo.js';
 
 
 class Interface {
     static allCubes=[];
 
     constructor() {
-        document.querySelector('.createcube').addEventListener('click',Interface.addCube)
+        document.querySelector('.createcube').addEventListener('click',Interface.addCube);
+
     }
 
     static addCube() {
@@ -21,4 +22,6 @@ class Interface {
 
 new Interface;
 
-//alert(window.getComputedStyle(document.querySelector('.createcube')).fontFamily);
+/* для пробы вставки свг инлайн в скрипте и стилизации из скрипта: */
+document.querySelector('.forSVGInline').insertAdjacentHTML('beforeEnd',probePictureInlineSVG);
+document.querySelector('.insideSVG').style.stroke='navy';
