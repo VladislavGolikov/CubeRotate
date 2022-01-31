@@ -23,5 +23,5 @@ class Interface {
 new Interface;
 
 /* для пробы вставки свг инлайн в скрипте и стилизации из скрипта: */
-document.querySelector('.forSVGInline').insertAdjacentHTML('beforeEnd',probePictureInlineSVG);
+document.querySelector('.forSVG').insertAdjacentHTML('beforeEnd',probePictureInlineSVG);
 document.querySelector('.insideSVG').style.stroke='navy';

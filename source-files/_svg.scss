@@ -1,6 +1,7 @@
-.forSVGInline {
+$spacing: 5vw;
+
+%svg {
     position: absolute;
-    $spacing: 5vw;
     width: $spacing;
     height: $spacing;
     right: $spacing/4;
@@ -8,10 +9,19 @@
     background-color: red;
 }
 
+.forSVG {
+    @extend %svg;
+}
+
+.forSVGInline {
+    @extend %svg;
+    right: $spacing*6/4;
+}
+
 .insideSVG {
     fill: green;
     fill-opacity: 0.8;
-    stroke: yellow;
+    stroke: white;
     stroke-width: 4;
     stroke-dasharray: 4 5;
 }
