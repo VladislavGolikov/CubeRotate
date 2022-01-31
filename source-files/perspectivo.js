@@ -61,6 +61,9 @@ export class CubeRotate {
         /* для пробы вставки картинки в скрипте: */
         this.sideArea[2].style.backgroundImage=`url('${probePicture}')`;
 
+        /* для пробы вставки свг картинки в скрипте: */
+        this.sideArea[3].style.backgroundImage=`url('${probePictureSVG}')`;
+
         this.cardanoArea.style.width=`${this.cubeSize*this.coefCardanoSize}vh`;
         this.cardanoArea.style.height=`${this.cubeSize*this.coefCardanoSize}vh`;
         this.cardanoArea.style.left=`${this.placeX}vw`;
